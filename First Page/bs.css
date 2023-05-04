@@ -1,0 +1,117 @@
+svg:hover {
+    scale: 120%;
+}
+
+.card-right svg{
+    animation: bobble 3s linear infinite; /*!delay iteration-count direction fill-mode*/
+    transition: 0.4s;
+}
+
+#HTML:hover{
+    color: #ED4C2C;
+}
+
+#CSS:hover{
+    color: #2449D8
+}
+
+#JS:hover{
+    color: #EFD81D  
+}
+
+#REACT:hover{
+    color: #02D1F2
+}
+
+#VUE:hover{
+    color: #3EAF7C
+}
+
+#NODE:hover{
+    color: #7CC327
+}
+
+#CSS{
+    animation-delay: 0.4s;
+}
+
+#JS{
+    animation-delay: 0.8s;
+}
+
+#REACT{
+    animation-delay: 1.2s;
+}
+
+#VUE{
+    animation-delay: 1.6s;
+}
+
+#NODE{
+    animation-delay: 2s;
+}
+
+
+@keyframes bobble {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}  
+
+.point{
+    animation: bobble 3s linear infinite;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; 
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(255, 30, 30, 0.601);
+    color: white;
+    transform: rotateY(180deg);
+  }
